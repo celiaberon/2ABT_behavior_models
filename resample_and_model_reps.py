@@ -37,7 +37,7 @@ def pull_sample_dataset(session_id_list, data):
     sample_target = [data[data.Session==session].Target.values.astype('int') for session in session_id_list] # for expected reward only
 
     # makde test_df ordered same as test_sessions
-    sample_block_pos_core = pd.concat(list(map(lambda i: data[data.Session == i], session_id_list))).reset_index(drop=True) 
+    sample_block_pos_core = pd.concat([data[data.Session == session] for session in session_id_list] ).reset_index(drop=True)
     
     return sample_features, sample_target, sample_block_pos_core
 

@@ -31,7 +31,7 @@ def fit_with_sgd(ll_func, training_data, num_steps=10000, step_size=1e-1, init_p
     '''
     
     # simple gradient ascent algorithm
-    from jax.experimental.optimizers import sgd
+    from jax.example_libraries.optimizers import sgd
 
     init_fun, update_fun, get_params = sgd(step_size)
     opt_state = init_fun(init_parameters)
