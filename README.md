@@ -25,7 +25,7 @@ Supported action policies:
 - "Stochastic"
 - Softmax
 
-The notebook `demo_models.ipynb` demonstrates how to fit and compute choice probabilities using the various models. Mouse data analyzed in Beron et al., 2022 is included in this repo as `mouse_data.csv`. 
+The notebook `demo_models.ipynb` demonstrates how to fit and compute choice probabilities using the various models. Mouse data analyzed in Beron et al., 2022 can be found at https://doi.org/10.7910/DVN/7E0NM5 (note, this has changed from previous location). 
 
 ### Simulate behavior from models
 This repo currently includes generative simulations for the HMM and RFLR.
